@@ -25,7 +25,7 @@ const props = defineProps({
 
         <div class="mt-2 mx-2 text-center">
 
-            <FontAwesomeIcon icon="arrow-right-long" class="fs-10"/>
+            <FontAwesomeIcon icon="arrow-right-long" class="fs-10 mt-2"/>
 
         </div>
 
@@ -42,7 +42,7 @@ const props = defineProps({
 <style scoped>
 
 .fs-10{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 </style>

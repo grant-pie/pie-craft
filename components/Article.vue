@@ -12,7 +12,7 @@ const formattedDate = computed(() => props.publishedAt?.toISOString().split('T')
 </script>
 
 <template>
-    <div class="card w-50 m-4 flex-fill border ">
+    <div class="card w-75 m-4 flex-fill border ">
       <!-- Title and Date Wrapper -->
       <div class="card-header position-relative d-flex align-items-center px-4">
         <!-- Title: Absolutely Centered -->

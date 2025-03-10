@@ -1,14 +1,17 @@
 <script setup>
 const route = useRoute()
+
+const pickAxeIconUrlBlack = '/images/pickaxe.png'
+
 </script>
 
 <template>
   <nav class="sidenav border bg-white">
     <div style="width: 18rem;">
       <div class="p-0">
-        <div class="border d-flex mb-0">
+        <div class="border d-flex justify-content-center mb-0">
           <img src="/images/logo.png" alt="" height="75px" width="75px">
-          <h2 class="ms-2 mt-4">PieCraft</h2>
+
         </div>
         
         <div class="list-group">
@@ -17,7 +20,10 @@ const route = useRoute()
             class="list-group-item  list-group-item-action text-decoration-none"
             :class="route.path === '/' ? 'active text-light' : 'text-dark'"
             :aria-current="route.path === '/'">
-            Home
+            <div class="d-flex">
+              <FontAwesomeIcon icon="house" class="fs-5 me-custom"/> 
+              <p class="mb-0">Home</p>
+            </div>
           </NuxtLink>
 
           <NuxtLink 
@@ -25,7 +31,10 @@ const route = useRoute()
             class="list-group-item list-group-item-action text-decoration-none"
             :class="route.path === '/events' ? 'active text-light' : 'text-dark'"
             :aria-current="route.path === '/events'">
-            Events
+            <div class="d-flex">
+              <FontAwesomeIcon icon="calendar-days" class="fs-5 me-3"/> 
+              <p class="mb-0">Events</p>
+            </div>
           </NuxtLink>
           
           <NuxtLink 
@@ -33,7 +42,10 @@ const route = useRoute()
             class="list-group-item list-group-item-action text-decoration-none"
             :class="route.path === '/jobs' ? 'active text-light' : 'text-dark'"
             :aria-current="route.path === '/jobs'">
-            Society Jobs
+            <div class="d-flex">
+              <FontAwesomeIcon icon="hammer" class="fs-6 me-3"/> 
+              <p class="mb-0">Society Jobs</p>
+            </div>
           </NuxtLink>
           
           <NuxtLink 
@@ -41,7 +53,10 @@ const route = useRoute()
             class="list-group-item list-group-item-action text-decoration-none"
             :class="route.path === '/quests' ? 'active text-light' : 'text-dark'"
             :aria-current="route.path === '/quests'">
-            Society Quests
+            <div class="d-flex">
+              <FontAwesomeIcon icon="book" class="fs-5 me-3"/> 
+              <p class="mb-0">Quests</p>
+            </div>
           </NuxtLink>
 
           <NuxtLink 
@@ -49,7 +64,10 @@ const route = useRoute()
             class="list-group-item list-group-item-action text-decoration-none"
             :class="route.path === '/shop' ? 'active text-light' : 'text-dark'"
             :aria-current="route.path === '/shop'">
-            Shop
+            <div class="d-flex">
+              <FontAwesomeIcon icon="gem" class="fs-5 me-3"/> 
+              <p class="mb-0">Shop</p>
+            </div>
           </NuxtLink>
         </div>
       </div>
@@ -58,6 +76,10 @@ const route = useRoute()
 </template>
 
 <style scoped>
+
+.me-custom{
+  margin-right: 0.75rem;
+}
 .sidenav {
   position: sticky;
   top: 0;

@@ -8,9 +8,7 @@
     <div class="content-wrapper">
       <SideNav />
       <main class="main-content-wrapper">
-        <div class="centered-content">
-          <NuxtPage />
-        </div>
+        <NuxtPage />
       </main>
     </div>
   </div>
@@ -58,7 +56,6 @@ html, body {
 .content-wrapper {
   display: flex;
   min-height: 100vh;
-  padding: 1rem;
   position: relative;
   z-index: 1;
 }
@@ -67,14 +64,10 @@ html, body {
   flex: 1;
   display: flex;
   justify-content: center;
-  padding-left: 1rem;
+
 }
 
-.centered-content {
-  width: 100%;
-  max-width: 1200px; /* Adjust based on your desired content width */
-  margin-left: calc(-9rem); /* Half the width of your sidebar to offset centering */
-}
+
 
 @media (max-width: 1400px) {
   /* Disable the offset on smaller screens */

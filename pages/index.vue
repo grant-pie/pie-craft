@@ -1,8 +1,92 @@
 <template>
 <div>
         <h1 class="text-center mt-5">Welcome to the Official Home of PieCraft.</h1>
-  
-        <div class="d-flex flex-column align-items-center mt-5">
+
+        <div class="d-flex flex-column align-items-center mt-4">
+
+          <div class="d-flex w-75 justify-content-between">
+
+            <NuxtLink
+            :to="'/events'"
+            class="card col-6 text-decoration-none"
+            >
+              <button class="">
+
+                <div class="card-body d-flex justify-content-center">
+
+                  <FontAwesomeIcon icon="calendar-days" class="fs-5 me-3"/> 
+
+                  <p class="mb-0">Click me to see upcoming events.</p>
+
+                </div>
+
+                </button>
+            </NuxtLink>
+
+            <NuxtLink
+            class="card col-6 text-decoration-none bg-white"
+            :to="'/jobs'"
+            >
+              <button>
+
+                <div class="card-body d-flex justify-content-center">
+
+                  <FontAwesomeIcon icon="hammer" class="fs-5 me-3"/> 
+
+                  <p class="mb-0">Click me if you need something to do.</p>
+
+                </div>
+
+              </button>
+            </NuxtLink>
+
+
+            
+
+          </div>
+
+          <div class="d-flex w-75 mt-1 justify-content-between">
+
+            <NuxtLink
+            class="card col-6 text-decoration-none bg-white"
+            :to="'/quests'">
+              
+              <button>
+
+                <div class="card-body d-flex justify-content-center">
+
+                  <FontAwesomeIcon icon="book" class="fs-5 me-3"/> 
+
+                  <p class="mb-0">Click me if you need excitement.</p>
+
+                </div>
+
+              </button>
+            </NuxtLink>
+
+            <NuxtLink
+            class="card col-6 text-decoration-none bg-white"
+            :to="'/'"
+            >
+              <button>
+
+                <div class="card-body d-flex justify-content-center">
+
+                  <FontAwesomeIcon icon="gem" class="fs-5 me-3"/> 
+
+                  <p class="mb-0">Click me you want to spend some emeralds.</p>
+
+                </div>
+
+              </button>
+
+            </NuxtLink>
+          </div>
+        </div>
+
+     
+
+        <div class="d-flex flex-column align-items-center mt-2">
           <Article
             v-for="article in articles" 
             :key="article.title"

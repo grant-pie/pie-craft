@@ -1,0 +1,86 @@
+<template>
+  <div class="app-container">
+    <!-- Background image and overlay -->
+    <div class="background-image"></div>
+    <div class="background-overlay"></div>
+    
+    <!-- Content -->
+    <div class="content-wrapper">
+      <SideNav />
+      <main class="main-content-wrapper">
+        <div class="centered-content">
+          <NuxtPage />
+        </div>
+      </main>
+    </div>
+  </div>
+</template>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+/* Background image */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/background.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+/* Overlay */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* White with 85% opacity */
+  z-index: -1;
+}
+
+.content-wrapper {
+  display: flex;
+  min-height: 100vh;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.centered-content {
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your desired content width */
+  margin-left: calc(-9rem); /* Half the width of your sidebar to offset centering */
+}
+
+@media (max-width: 1400px) {
+  /* Disable the offset on smaller screens */
+  .centered-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+</style>

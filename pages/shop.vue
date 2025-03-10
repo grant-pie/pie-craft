@@ -8,7 +8,7 @@
 
                 <div class="card-body">
 
-                    <h4 class="card-title text-center">Welcome to the PieCraft Shop?</h4>
+                    <h4 class="card-title text-center">Welcome to the PieCraft Shop</h4>
 
                     <div class="d-flex">
                         
@@ -64,7 +64,7 @@
 import ItemTrade from '~/components/ItemTrade.vue'
 const itemTrades = [
     {
-        item1Name: "Diamond Pickaxe",
+        item1Name: "Diamond Axe",
         item1Qty: 1,
         item1ImgUrl: '/images/items/enchanted_iron_axe.png',
         item2Name: "Diamond Pickaxe",

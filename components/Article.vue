@@ -23,8 +23,6 @@ const formattedDate = computed(() => props.publishedAt?.toISOString().split('T')
         <p class="ms-auto mt-3">{{ formattedDate }}</p>
       </div>
   
-      
-  
       <div class="card-body px-4">
         <img :src="imgUrl" class="card-img-top" alt="...">
         <div class="d-flex mt-4">

@@ -3,83 +3,59 @@
         <h1 class="text-center mt-5">Welcome to the Official Home of PieCraft.</h1>
 
         <div class="d-flex flex-column align-items-center mt-4">
-
           <div class="d-flex w-75 justify-content-between">
-
-            <NuxtLink
-            :to="'/events'"
-            class="card col-6 text-decoration-none"
-            >
-              <button class="">
-
-                <div class="card-body d-flex justify-content-center">
-
+            <NuxtLink :to="'/events'" class="card col-6 text-decoration-none">
+              <button 
+                class="w-100 card" 
+                v-on:mouseenter="hoverEvents = true" 
+                v-on:mouseleave="hoverEvents = false"
+                :class="{ 'bg-primary text-light': hoverEvents }">
+                <div class="card-body d-flex align-items-center">
                   <FontAwesomeIcon icon="calendar-days" class="fs-5 me-3"/> 
-
                   <p class="mb-0">Click me to see upcoming events.</p>
-
                 </div>
-
-                </button>
-            </NuxtLink>
-
-            <NuxtLink
-            class="card col-6 text-decoration-none bg-white"
-            :to="'/jobs'"
-            >
-              <button>
-
-                <div class="card-body d-flex justify-content-center">
-
-                  <FontAwesomeIcon icon="hammer" class="fs-5 me-3"/> 
-
-                  <p class="mb-0">Click me if you need something to do.</p>
-
-                </div>
-
               </button>
             </NuxtLink>
 
-
-            
-
+            <NuxtLink class="card col-6 text-decoration-none" :to="'/jobs'">
+              <button 
+                class="w-100 card"  
+                v-on:mouseenter="hoverJobs = true" 
+                v-on:mouseleave="hoverJobs = false"
+                :class="{ 'bg-primary text-light': hoverJobs }">
+                <div class="card-body d-flex align-items-center">
+                  <FontAwesomeIcon icon="hammer" class="fs-5 me-3"/> 
+                  <p class="mb-0">Click me if you need something to do.</p>
+                </div>
+              </button>
+            </NuxtLink>
           </div>
 
           <div class="d-flex w-75 mt-1 justify-content-between">
-
-            <NuxtLink
-            class="card col-6 text-decoration-none bg-white"
-            :to="'/quests'">
-              
-              <button>
-
-                <div class="card-body d-flex justify-content-center">
-
+            <NuxtLink class="card col-6 text-decoration-none" :to="'/quests'">
+              <button 
+                class="w-100 card" 
+                v-on:mouseenter="hoverQuests = true" 
+                v-on:mouseleave="hoverQuests = false"
+                :class="{ 'bg-primary text-light': hoverQuests }">
+                <div class="card-body d-flex align-items-center">
                   <FontAwesomeIcon icon="book" class="fs-5 me-3"/> 
-
                   <p class="mb-0">Click me if you need excitement.</p>
-
                 </div>
-
               </button>
             </NuxtLink>
 
-            <NuxtLink
-            class="card col-6 text-decoration-none bg-white"
-            :to="'/'"
-            >
-              <button>
-
-                <div class="card-body d-flex justify-content-center">
-
+            <NuxtLink class="card col-6 text-decoration-none" :to="'/'">
+              <button 
+                class="w-100 card" 
+                v-on:mouseenter="hoverEmeralds = true" 
+                v-on:mouseleave="hoverEmeralds = false"
+                :class="{ 'bg-primary text-light': hoverEmeralds }">
+                <div class="card-body d-flex align-items-center">
                   <FontAwesomeIcon icon="gem" class="fs-5 me-3"/> 
-
                   <p class="mb-0">Click me you want to spend some emeralds.</p>
-
                 </div>
-
               </button>
-
             </NuxtLink>
           </div>
         </div>
@@ -115,6 +91,11 @@
       },
 
   ]
+    const hoverEvents= ref(false);
+    const hoverJobs= ref(false);
+    const hoverQuests= ref(false);
+    const hoverEmeralds= ref(false);
+  
   </script>
   
   <style scoped>

@@ -40,7 +40,7 @@ const quests = [
         rewardName: "Evercleave",
         requirements: ["Spruce Sapling", "Oak Sapling", "Acacia Sapling", "Birch Sapling", "Dark Oak Sapling"],
         rewardDescription: 'Iron Axe, Enchanted with Unbreaking III, Mending I and Efficiency V',
-        rewardUrl: '/images/items/enchanted_iron_axe.webp',
+        rewardUrl: './images/items/enchanted_iron_axe.webp',
     },
     {
         name: "The Temple of Anubis.",
@@ -48,7 +48,7 @@ const quests = [
         rewardName: "Burrowbane",
         requirements: ["A Desert Temple"],
         rewardDescription: 'Iron Shovel, Enchanted with Unbreaking III, Mending I and Efficiency V',
-        rewardUrl: '/images/items/enchanted_iron_shovel.webp',
+        rewardUrl: './images/items/enchanted_iron_shovel.webp',
     },
     {
         name: "We must go deep...",
@@ -56,7 +56,7 @@ const quests = [
         rewardName: "Veinreaver",
         requirements: ["A Desert Temple"],
         rewardDescription: 'Iron Pickaxe, Enchanted with Unbreaking III, Mending I and Efficiency V',
-        rewardUrl: '/images/items/enchanted_iron_pickaxe.webp',
+        rewardUrl: './images/items/enchanted_iron_pickaxe.webp',
     },
     {
         name: "Visions of a Strange Dimention",
@@ -64,7 +64,7 @@ const quests = [
         rewardName: "Nightfang",
         requirements: ["12 x Ender Pearls"],
         rewardDescription: 'Iron Sword, Enchanted with Unbreaking III, Mending I and Sharpness V',
-        rewardUrl: '/images/items/enchanted_iron_sword.webp',
+        rewardUrl: './images/items/enchanted_iron_sword.webp',
     },
 ]
 

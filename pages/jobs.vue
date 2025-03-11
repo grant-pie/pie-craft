@@ -42,10 +42,10 @@ const jobs = [
         description: 'The Society has created a quarry near Sunstone village. They have asked us to dig for coal inside this quarry and it is important to keep in mind that only coal mined from the quarry is accepted. This job is repeatable.',
         item1Name: "",
         item1Qty: 1,
-        item1ImgUrl: '/images/items/coal.webp',
+        item1ImgUrl: './images/items/coal.webp',
         item2Name: "",
         item2Qty: 1,
-        item2ImgUrl: '/images/items/emerald.webp',
+        item2ImgUrl: './images/items/emerald.webp',
         repeatable: true
     }, 
     {
@@ -53,10 +53,10 @@ const jobs = [
         description: 'The Society has created a quarry near Sunstone village. They have asked us to dig for iron inside this quarry and it is important to keep in mind that only iron mined from the quarry is accepted. This job is repeatable.',
         item1Name: "",
         item1Qty: 1,
-        item1ImgUrl: '/images/items/iron_ore.png',
+        item1ImgUrl: './images/items/iron_ore.png',
         item2Name: "",
         item2Qty: 1,
-        item2ImgUrl: '/images/items/emerald.webp',
+        item2ImgUrl: './images/items/emerald.webp',
         repeatable: true
     }, 
     {
@@ -64,10 +64,10 @@ const jobs = [
         description: 'The Society has asked us to harvest lumber. Any type will do but a variety of different types will be nice to have. This job is repeatable.',
         item1Name: "",
         item1Qty: 1,
-        item1ImgUrl: '/images/items/oak_log.webp',
+        item1ImgUrl: './images/items/oak_log.webp',
         item2Name: "",
         item2Qty: 1,
-        item2ImgUrl: '/images/items/emerald.webp',
+        item2ImgUrl: './images/items/emerald.webp',
         repeatable: true
     }, 
     {
@@ -75,10 +75,10 @@ const jobs = [
         description: 'As we prepare for the oncoming battles we need to ensure that our troops have ample food supply. Thus the Society has asked us to bake a surplus of bread. This job is repeatable.',
         item1Name: "",
         item1Qty: 1,
-        item1ImgUrl: '/images/items/bread.webp',
+        item1ImgUrl: './images/items/bread.webp',
         item2Name: "",
         item2Qty: 1,
-        item2ImgUrl: '/images/items/emerald.webp',
+        item2ImgUrl: './images/items/emerald.webp',
         repeatable: true
     },
     {
@@ -86,10 +86,10 @@ const jobs = [
         description: "To ensure that we protect our home and people the Society has asked us to build a small wall around our home. This wall must be at least four blocks high and three blocks thick. Don't boring - be sure to build a wall that not only works well but is also nice to look at. This job is repeatable.",
         item1Name: "",
         item1Qty: 0,
-        item1ImgUrl: '/images/items/iron_hammer.webp',
+        item1ImgUrl: './images/items/iron_hammer.webp',
         item2Name: "",
         item2Qty: 1,
-        item2ImgUrl: '/images/items/emerald.webp',
+        item2ImgUrl: './images/items/emerald.webp',
         repeatable: false
     },
 ]

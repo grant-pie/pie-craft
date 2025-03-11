@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // Target static deployment
-  ssr: false,
+  ssr: true,
 
   // Set the base URL to match your GitHub repository name
   app: {

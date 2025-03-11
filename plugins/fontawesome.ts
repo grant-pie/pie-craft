@@ -5,9 +5,10 @@ import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 import { faHammer } from '@fortawesome/free-solid-svg-icons'  
 import { faBook } from '@fortawesome/free-solid-svg-icons'  
 import { faGem } from '@fortawesome/free-solid-svg-icons' 
+import { faRepeat } from '@fortawesome/free-solid-svg-icons' 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faArrowRightLong, faHouse, faCalendarDays, faHammer,faBook, faGem)
+library.add(faArrowRightLong, faHouse, faCalendarDays, faHammer,faBook, faGem, faRepeat)
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)

@@ -16,7 +16,7 @@ const props = defineProps({
         <div 
         class="card position-absolute position-absolute--bottom-right px-1"
         >
-            <strong>{{ qty }}</strong>
+            <strong v-show="qty > 0">{{ qty }}</strong>
         </div>
     </div>
 

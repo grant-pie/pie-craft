@@ -86,7 +86,7 @@
       {
           title: "PieCraft.net launched!",
           publishedAt: '2025-03-09',
-          imgUrl: '/images/mcraft2.jpeg',
+          imgUrl: '/assets/images/mcraft2.jpeg',
           body: 'Our Minecraft server website is now live! We’re excited to introduce this new hub where players can stay informed and engaged with everything happening on the server. You can now check for upcoming event dates and announcements, view the jobs system, take on unique quests and challenges to unlock special rewards, and browse the in-game shop for useful items and upgrades. Our goal is to provide a seamless way for players to stay connected, whether they are looking for the next big event, working towards job and quest milestones, or shopping for essentials. See you in-game!'
       },
 

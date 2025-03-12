@@ -1,13 +1,26 @@
 <template>
   <div class="app-container">
-    <!-- Background image and overlay -->
-    <div class="background-image"></div>
-    <div class="background-overlay"></div>
-    
+
     <!-- Content -->
     <div class="content-wrapper">
+      <nav class="navbar fixed-top bg-white ">
+    
+      <button class="navbar-toggler ms-5  d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="d-flex d-xl-none justify-content-center z-minus-1 w-100 position-absolute">
+          <img src="/images/logo.png" alt="" class="align-self-center" height="50px" width="50px">
+        </div>
+
+    </nav>
       <SideNav />
-      <main class="main-content-wrapper">
+      <main class="main-content-wrapper ">
+
+            <!-- Background image and overlay -->
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+        
         <NuxtPage />
       </main>
     </div>
@@ -19,6 +32,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow: auto!important;
 }
 
 .app-container {
@@ -67,7 +81,14 @@ html, body {
 
 }
 
-
+.navbar{
+    background-color: transparent!important;
+  
+  }
+  
+.z-minus-1{
+  z-index: -1;
+}
 
 @media (max-width: 1400px) {
   /* Disable the offset on smaller screens */

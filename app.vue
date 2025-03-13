@@ -3,7 +3,7 @@
 
     <!-- Content -->
     <div class="content-wrapper">
-      <nav class="navbar fixed-top bg-white ">
+      <nav class="navbar d-xl-none fixed-top bg-white ">
     
       <button class="navbar-toggler ms-5  d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon "></span>
@@ -90,11 +90,4 @@ html, body {
     --bs-gutter-x: 0;
 }
 
-@media (max-width: 1400px) {
-  /* Disable the offset on smaller screens */
-  .centered-content {
-    margin-left: 0;
-    max-width: 100%;
-  }
-}
 </style>

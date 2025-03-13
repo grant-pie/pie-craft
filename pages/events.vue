@@ -1,13 +1,16 @@
 <template>
 
 
-<div >
+<div 
+class="d-flex flex-column w-100"
+>
 
     <h1 class="text-center mt-5">Upcoming Events.</h1>
 
     <div class="d-flex flex-column  align-items-center mt-5">
         
         <Event
+        class="w-100 mb-5"
         v-for="event in events"
         :title="event.title"
         :startDate="new Date(event.startDate)"

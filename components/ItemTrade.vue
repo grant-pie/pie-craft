@@ -23,9 +23,9 @@ const props = defineProps({
         :imgUrl="item1ImgUrl"
         />
 
-        <div class="mt-2 mx-2 text-center">
+        <div class="text-center">
 
-            <FontAwesomeIcon icon="arrow-right-long" class="fs-10 mt-2"/>
+            <FontAwesomeIcon icon="arrow-right-long" class="fs-10 mt-3 mx-2"/>
 
         </div>
 

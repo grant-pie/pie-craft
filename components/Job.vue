@@ -14,7 +14,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="card flex-fill m-4 px-0 border" style="width: 18rem;">
+    <div class="card px-0 border" style="width: 18rem;">
         <div class="card-header d-flex justify-content-center">
           <FontAwesomeIcon
           v-show="repeatable"

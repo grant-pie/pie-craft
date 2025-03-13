@@ -1,7 +1,7 @@
 <template>
-    <div class="card bg-transparent w-75 mx-auto">
-        <div class="card-body d-flex flex-column">
-            <div class="card m-4 border">
+    <div class="card mt-5 bg-transparent ">
+        <div class="card-body px-0 d-flex flex-column">
+            <div class="card border">
                 <div class="card-body">
                     <h4 class="card-title text-center">What are Society Quests?</h4>
                     <div class="d-flex">
@@ -11,17 +11,19 @@
             </div>
 
             <!-- Organize quests in rows of two -->
-            <div class="quests-container">
+            <div class="quests-container mt-5">
                 <div v-for="(chunk, index) in questsInChunks" :key="index" class="row">
                     <Quest
-                        v-for="quest in chunk"
-                        :key="quest.name"
-                        :name="quest.name"
-                        :description="quest.description"
-                        :requirements="quest.requirements"
-                        :rewardUrl="quest.rewardUrl"
-                        :rewardName="quest.rewardName"
-                        :rewardDescription="quest.rewardDescription"
+                    class="mb-5 flex-fill"
+                    v-for="(quest, index) in chunk"
+                    :key="quest.name"
+                    :name="quest.name"
+                    :description="quest.description"
+                    :requirements="quest.requirements"
+                    :rewardUrl="quest.rewardUrl"
+                    :rewardName="quest.rewardName"
+                    :rewardDescription="quest.rewardDescription"
+                     :class="chunk.length > 1 ? index % 2 === 0  ? 'me-2' : 'ms-2' : ''"
                     />
                 </div>
             </div>
@@ -81,16 +83,5 @@ const questsInChunks = computed(() => {
 <style scoped>
 .card {
     border: 0;
-}
-
-.quests-container {
-    width: 100%;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
 }
 </style>

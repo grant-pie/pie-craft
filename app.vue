@@ -15,7 +15,7 @@
 
     </nav>
       <SideNav />
-      <main class="main-content-wrapper ">
+      <main class="main-content-wrapper mx-5">
 
             <!-- Background image and overlay -->
         <div class="background-image"></div>
@@ -81,13 +81,13 @@ html, body {
 
 }
 
-.navbar{
-    background-color: transparent!important;
-  
-  }
   
 .z-minus-1{
   z-index: -1;
+}
+
+.row{
+    --bs-gutter-x: 0;
 }
 
 @media (max-width: 1400px) {

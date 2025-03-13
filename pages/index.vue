@@ -2,11 +2,13 @@
 <div>
         <h1 class="text-center mt-5">Welcome to the Official Home of PieCraft.</h1>
 
-        <div class="d-flex flex-column align-items-center mt-4">
-          <div class="d-flex w-75 justify-content-between">
-            <NuxtLink :to="'/events'" class="card col-6 text-decoration-none">
+        <div class="d-flex flex-column mt-5 ">
+
+          <div class="row">
+
+            <NuxtLink :to="'/events'" class="card bg-transparent border-none col-12 col-md-6 px-0 text-decoration-none">
               <button 
-                class="w-100 card" 
+                class="card me-2" 
                 v-on:mouseenter="hoverEvents = true" 
                 v-on:mouseleave="hoverEvents = false"
                 :class="{ 'bg-primary text-light': hoverEvents }">
@@ -17,9 +19,9 @@
               </button>
             </NuxtLink>
 
-            <NuxtLink class="card col-6 text-decoration-none" :to="'/jobs'">
+            <NuxtLink class="card bg-transparent border-none  col-12 col-md-6 px-0 text-decoration-none" :to="'/jobs'">
               <button 
-                class="w-100 card"  
+                class="card ms-2"  
                 v-on:mouseenter="hoverJobs = true" 
                 v-on:mouseleave="hoverJobs = false"
                 :class="{ 'bg-primary text-light': hoverJobs }">
@@ -31,10 +33,10 @@
             </NuxtLink>
           </div>
 
-          <div class="d-flex w-75 mt-1 justify-content-between">
-            <NuxtLink class="card col-6 text-decoration-none" :to="'/quests'">
+          <div class="d-flex row mt-4 justify-content-between">
+            <NuxtLink class="card bg-transparent border-none  col-12 col-md-6 px-0 text-decoration-none" :to="'/quests'">
               <button 
-                class="w-100 card" 
+                class="card me-2" 
                 v-on:mouseenter="hoverQuests = true" 
                 v-on:mouseleave="hoverQuests = false"
                 :class="{ 'bg-primary text-light': hoverQuests }">
@@ -45,9 +47,9 @@
               </button>
             </NuxtLink>
 
-            <NuxtLink class="card col-6 text-decoration-none" :to="'/'">
+            <NuxtLink class="card bg-transparent border-none  col-12 col-md-6 px-0 text-decoration-none" :to="'/'">
               <button 
-                class="w-100 card" 
+                class="card ms-2" 
                 v-on:mouseenter="hoverEmeralds = true" 
                 v-on:mouseleave="hoverEmeralds = false"
                 :class="{ 'bg-primary text-light': hoverEmeralds }">
@@ -62,7 +64,7 @@
 
      
 
-        <div class="d-flex flex-column align-items-center mt-2">
+        <div class="d-flex flex-column mt-5">
           <Article
             v-for="article in articles" 
             :key="article.title"
@@ -99,7 +101,14 @@
   </script>
   
   <style scoped>
+  .border-none{
+    border: none;
+  }
+
   .max-height-100vh{
       max-height: 100vh;
+  }
+  .row{
+    --bs-gutter-x: 0;
   }
   </style>

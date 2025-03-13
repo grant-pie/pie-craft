@@ -12,15 +12,15 @@ const formattedDate = computed(() => props.publishedAt?.toISOString().split('T')
 </script>
 
 <template>
-    <div class="card w-75 m-4 flex-fill border ">
+    <div class="card ">
       <!-- Title and Date Wrapper -->
-      <div class="card-header position-relative d-flex align-items-center px-4">
+      <div class="d-flex card-header position-relative px-4">
         <!-- Title: Absolutely Centered -->
         <h4 class="position-absolute start-50 top-50 translate-middle text-center">
           {{ title }}
         </h4>
         <!-- Date: Aligned to the Right -->
-        <p class="ms-auto mt-3">{{ formattedDate }}</p>
+        <p class="mx-auto ms-md-auto me-md-0 mt-10 ">{{ formattedDate }}</p>
       </div>
   
       <div class="card-body px-4">
@@ -32,3 +32,12 @@ const formattedDate = computed(() => props.publishedAt?.toISOString().split('T')
     </div>
   </template>
   
+<style scoped>
+.mt-10{
+    margin-top: 8rem;
+  }
+@media (min-width: 992px) { .mt-10{
+    margin-top: 1rem;
+}}
+  
+</style>

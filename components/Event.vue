@@ -15,7 +15,7 @@ const formattedEndDate = computed(() => props.endDate?.toISOString().split('T')[
 
 <template>
 
-    <div class="card w-50 flex-fill m-4 border" style="width: 18rem;">
+    <div class="card border" style="width: 18rem;">
         <div class="card-header">
             <h4 class="card-title text-center  mt-2">{{title}}</h4>
         </div>
@@ -24,7 +24,7 @@ const formattedEndDate = computed(() => props.endDate?.toISOString().split('T')[
 
         <div class="card-body">
 
-            <div class="d-flex">
+            <div class="d-flex flex-column flex-md-row">
 
                 <div class="card bg-light flex-fill m-4 d-flex flex-colomn align-items-center">
                     <strong class="mt-2">Starts:</Strong>

@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="card border flex-fill m-4 px-0" style="width: 18rem;">
+    <div class="card border px-0" style="width: 18rem;">
         <div class="card-header">
             <h4 class="card-title text-center mt-2">{{name}}</h4>
         </div>

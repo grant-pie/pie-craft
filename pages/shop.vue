@@ -1,7 +1,7 @@
 <template>
-    <div class="card bg-transparent w-75 mx-auto">
-        <div class="card-body d-flex flex-column">
-            <div class="card m-4 border">
+    <div class="card w-100 mt-5  bg-transparent">
+        <div class="card-body mx-0 px-0 d-flex flex-column">
+            <div class="card border">
                 <div class="card-body">
                     <h4 class="card-title text-center">Welcome to the PieCraft Shop</h4>
                     <div class="d-flex">Looking for a place to spend your harned earned emeralds? Look no further than our very own shop."
@@ -10,26 +10,34 @@
             </div>
 
             <!-- Organize shop items in rows of four -->
-            <div class="shop-container">
-                <div v-for="(chunk, index) in itemTradesInChunks" :key="index" class="shop-row">
+            <div class="shop-container mt-5">
+                <div v-for="(chunk, index) in itemTradesInChunks" :key="index" class="row">
                     <div
-                        class="card border shop-item"
-                        v-for="itemTrade in chunk"
-                        :key="itemTrade.item1Name"
+                    v-for="(itemTrade, index) in chunk"
+                    :key="itemTrade.item1Name"
+                    class=" m-0 col-3 mb-4 "
+                    :class="chunk.length == 1 ? 'd-flex flex-fill justify-content-center' : index === 0 ? 'pe-2' : index == 3 ? 'ps-2' : 'px-1'"
+                    
                     >
-                        <div class="card-header text-center">
-                            {{itemTrade.item1Name}}
-                        </div>
-                        <div class="card-body d-flex justify-content-center">
-                            <ItemTrade
-                                :item1Name="itemTrade.item1Name"
-                                :item1Qty="itemTrade.item1Qty"
-                                :item1ImgUrl="itemTrade.item1ImgUrl"
-                                :item2Name="itemTrade.item2Name"
-                                :item2Qty="itemTrade.item2Qty"
-                                :item2ImgUrl="itemTrade.item2ImgUrl"
-                            />
-                        </div>
+                        <div
+                            class="card border shop-item"
+
+                            >   
+                                <div class="card-header text-center">
+                                    {{itemTrade.item1Name}}
+                                </div>
+                                <div class="card-body d-flex justify-content-center">
+                                    <ItemTrade
+                                    :item1Name="itemTrade.item1Name"
+                                    :item1Qty="itemTrade.item1Qty"
+                                    :item1ImgUrl="itemTrade.item1ImgUrl"
+                                    :item2Name="itemTrade.item2Name"
+                                    :item2Qty="itemTrade.item2Qty"
+                                    :item2ImgUrl="itemTrade.item2ImgUrl"
+                            
+                                    />
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -133,33 +141,4 @@ const itemTradesInChunks = computed(() => {
     border: 0;
 }
 
-.shop-container {
-    width: 100%;
-}
-
-.shop-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.shop-item {
-    width: 22%;
-    margin: 0.5rem;
-    min-width: 160px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    .shop-item {
-        width: 45%;
-    }
-}
-
-@media (max-width: 576px) {
-    .shop-item {
-        width: 90%;
-    }
-}
 </style>

@@ -1,7 +1,7 @@
 <template>
-    <div class="card bg-transparent w-75 mx-auto">
-        <div class="card-body d-flex flex-column">
-            <div class="card m-4 border">
+    <div class="card mt-5 bg-transparent ">
+        <div class="card-body px-0 d-flex flex-column">
+            <div class="card border">
                 <div class="card-body">
                     <h4 class="card-title text-center">What are Society Jobs?</h4>
                     <div class="d-flex">
@@ -11,20 +11,22 @@
             </div>
 
             <!-- Organize jobs in rows of two -->
-            <div class="jobs-container">
-                <div v-for="(chunk, index) in jobsInChunks" :key="index" class="row">
+            <div class="jobs-container mt-5">
+                <div v-for="(chunk, index) in jobsInChunks" :key="index" class="row mb-5">
                     <Job
-                        v-for="job in chunk"
-                        :key="job.name"
-                        :name="job.name"
-                        :description="job.description"
-                        :item1Name="job.item1Name" 
-                        :item1Qty="job.item1Qty"
-                        :item1ImgUrl="job.item1ImgUrl"
-                        :item2Name="job.item2Name"
-                        :item2Qty="job.item2Qty"
-                        :item2ImgUrl="job.item2ImgUrl"
-                        :repeatable="job.repeatable"
+                    v-for="(job, index) in chunk"
+                    :key="job.name"
+                    :name="job.name"
+                    :description="job.description"
+                    :item1Name="job.item1Name" 
+                    :item1Qty="job.item1Qty"
+                    :item1ImgUrl="job.item1ImgUrl"
+                    :item2Name="job.item2Name"
+                    :item2Qty="job.item2Qty"
+                    :item2ImgUrl="job.item2ImgUrl"
+                    :repeatable="job.repeatable"
+                    :class="chunk.length > 1 ? index % 2 === 0  ? 'me-2' : 'ms-2' : ''"
+                    class="flex-fill"
                     />
                 </div>
             </div>
@@ -109,14 +111,4 @@ const jobsInChunks = computed(() => {
     border: 0;
 }
 
-.jobs-container {
-    width: 100%;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-}
 </style>

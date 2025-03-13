@@ -11,7 +11,9 @@ export default defineNuxtConfig({
   },
   
   plugins: [
-    '~/plugins/fontawesome'
+    '~/plugins/fontawesome',
+    { src: '~/plugins/bootstrap.client.ts', mode: 'client' }
+    
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },

@@ -1,5 +1,20 @@
 <script setup>
-const route = useRoute()
+import { onMounted, ref } from 'vue';
+const route = useRoute();
+const nuxtApp = useNuxtApp();
+const bsOffcanvas = ref(null);
+
+onMounted(() => {
+  const myOffcanvas = document.getElementById('offcanvasNavbar');
+  // Access bootstrap through the nuxtApp
+  bsOffcanvas.value = new nuxtApp.$bootstrap.Offcanvas(myOffcanvas);
+});
+
+function hideOffCanvas() {
+  if (bsOffcanvas.value) {
+    bsOffcanvas.value.hide();
+  }
+}
 </script>
 
 <template>
@@ -24,7 +39,10 @@ const route = useRoute()
             to="/"
             class="list-group-item list-group-item-action text-decoration-none ps-4"
             :class="route.path === '/' ? 'active text-light' : 'text-dark'"
-            :aria-current="route.path === '/'">
+            :aria-current="route.path === '/'"
+            @click="hideOffCanvas()"
+            >
+
             <div class="d-flex">
               <FontAwesomeIcon icon="house" class="fs-5 me-custom"/> 
               <p class="mb-0">Home</p>
@@ -35,7 +53,8 @@ const route = useRoute()
             to="/events"
             class="list-group-item list-group-item-action text-decoration-none ps-4"
             :class="route.path === '/events' ? 'active text-light' : 'text-dark'"
-            :aria-current="route.path === '/events'">
+            :aria-current="route.path === '/events'"
+            @click="hideOffCanvas()">
             <div class="d-flex">
               <FontAwesomeIcon icon="calendar-days" class="fs-5 me-3"/> 
               <p class="mb-0">Events</p>
@@ -46,7 +65,8 @@ const route = useRoute()
             to="/jobs"
             class="list-group-item list-group-item-action text-decoration-none ps-4"
             :class="route.path === '/jobs' ? 'active text-light' : 'text-dark'"
-            :aria-current="route.path === '/jobs'">
+            :aria-current="route.path === '/jobs'"
+            @click="hideOffCanvas()">
             <div class="d-flex">
               <FontAwesomeIcon icon="hammer" class="fs-6 me-3"/> 
               <p class="mb-0">Society Jobs</p>
@@ -57,7 +77,8 @@ const route = useRoute()
             to="/quests"
             class="list-group-item list-group-item-action text-decoration-none ps-4" 
             :class="route.path === '/quests' ? 'active text-light' : 'text-dark'"
-            :aria-current="route.path === '/quests'">
+            :aria-current="route.path === '/quests'"
+            @click="hideOffCanvas()">
             <div class="d-flex">
               <FontAwesomeIcon icon="book" class="fs-5 me-3"/> 
               <p class="mb-0">Quests</p>
@@ -68,7 +89,8 @@ const route = useRoute()
             to="/shop"
             class="list-group-item list-group-item-action text-decoration-none ps-4"
             :class="route.path === '/shop' ? 'active text-light' : 'text-dark'"
-            :aria-current="route.path === '/shop'">
+            :aria-current="route.path === '/shop'"
+            @click="hideOffCanvas()">
             <div class="d-flex">
               <FontAwesomeIcon icon="gem" class="fs-5 me-3"/> 
               <p class="mb-0">Shop</p>
@@ -81,8 +103,6 @@ const route = useRoute()
 </template>
 
 <style scoped>
-
-
 @media (min-width: 1200px) { 
   .offcanvas {
     visibility: visible!important;

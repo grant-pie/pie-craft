@@ -1,6 +1,6 @@
 <template>
 <div>
-        <h1 class="text-center mt-5">Welcome to the Official Home of PieCraft.</h1>
+        <h1 class="text-center mt-xl-5 mt-10">Welcome to the Official Home of PieCraft.</h1>
 
         <div class="d-flex flex-column mt-5 ">
 
@@ -8,7 +8,7 @@
 
             <NuxtLink :to="'/events'" class="card bg-transparent border-none col-12 col-md-6 px-0 text-decoration-none">
               <button 
-                class="card me-2" 
+                class="card me-xl-2" 
                 v-on:mouseenter="hoverEvents = true" 
                 v-on:mouseleave="hoverEvents = false"
                 :class="{ 'bg-primary text-light': hoverEvents }">
@@ -21,7 +21,7 @@
 
             <NuxtLink class="card bg-transparent border-none  col-12 col-md-6 px-0 text-decoration-none" :to="'/jobs'">
               <button 
-                class="card ms-2"  
+                class="card ms-xl-2"  
                 v-on:mouseenter="hoverJobs = true" 
                 v-on:mouseleave="hoverJobs = false"
                 :class="{ 'bg-primary text-light': hoverJobs }">
@@ -33,10 +33,10 @@
             </NuxtLink>
           </div>
 
-          <div class="d-flex row mt-4 justify-content-between">
+          <div class="d-flex row mt-xl-4 justify-content-between">
             <NuxtLink class="card bg-transparent border-none  col-12 col-md-6 px-0 text-decoration-none" :to="'/quests'">
               <button 
-                class="card me-2" 
+                class="card me-xl-2" 
                 v-on:mouseenter="hoverQuests = true" 
                 v-on:mouseleave="hoverQuests = false"
                 :class="{ 'bg-primary text-light': hoverQuests }">
@@ -49,7 +49,7 @@
 
             <NuxtLink class="card bg-transparent border-none  col-12 col-md-6 px-0 text-decoration-none" :to="'/'">
               <button 
-                class="card ms-2" 
+                class="card ms-xl-2" 
                 v-on:mouseenter="hoverEmeralds = true" 
                 v-on:mouseleave="hoverEmeralds = false"
                 :class="{ 'bg-primary text-light': hoverEmeralds }">

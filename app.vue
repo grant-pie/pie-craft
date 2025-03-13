@@ -81,6 +81,9 @@ html, body {
 
 }
 
+.mt-10{
+  margin-top: 7rem;;
+}
   
 .z-minus-1{
   z-index: -1;

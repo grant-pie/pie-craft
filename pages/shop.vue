@@ -15,8 +15,8 @@
                     <div
                     v-for="(itemTrade, index) in chunk"
                     :key="itemTrade.item1Name"
-                    class=" m-0 col-3 mb-4 "
-                    :class="chunk.length == 1 ? 'd-flex flex-fill justify-content-center' : index === 0 ? 'pe-2' : index == 3 ? 'ps-2' : 'px-1'"
+                    class=" m-0 col-xl-3 mb-4 "
+                    :class="chunk.length == 1 ? 'd-xl-flex flex-fill justify-content-center' : index === 0 ? 'pe-xl-2' : index == 3 ? 'ps-xl-2' : 'px-xl-1'"
                     
                     >
                         <div

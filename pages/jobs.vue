@@ -1,5 +1,5 @@
 <template>
-    <div class="card mt-5 bg-transparent ">
+    <div class="card mt-10 mt-xl-5 bg-transparent ">
         <div class="card-body px-0 d-flex flex-column">
             <div class="card border">
                 <div class="card-body">
@@ -12,7 +12,7 @@
 
             <!-- Organize jobs in rows of two -->
             <div class="jobs-container mt-5">
-                <div v-for="(chunk, index) in jobsInChunks" :key="index" class="row mb-5">
+                <div v-for="(chunk, index) in jobsInChunks" :key="index" class="row mb-xl-5">
                     <Job
                     v-for="(job, index) in chunk"
                     :key="job.name"
@@ -25,8 +25,8 @@
                     :item2Qty="job.item2Qty"
                     :item2ImgUrl="job.item2ImgUrl"
                     :repeatable="job.repeatable"
-                    :class="chunk.length > 1 ? index % 2 === 0  ? 'me-2' : 'ms-2' : ''"
-                    class="flex-fill"
+                    :class="chunk.length > 1 ? index % 2 === 0  ? 'me-xl-2' : 'ms-xl-2' : ''"
+                    class="flex-fill mb-5 mb-xl-0 "
                     />
                 </div>
             </div>

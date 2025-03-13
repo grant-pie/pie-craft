@@ -1,7 +1,10 @@
 import { defineNuxtPlugin } from "#app";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+import * as bootstrap from "bootstrap";
 
-export default defineNuxtPlugin(() => {
-  // Bootstrap is loaded globally, no need to return anything
+export default defineNuxtPlugin((nuxtApp) => {
+  // Make bootstrap available globally
+  nuxtApp.provide('bootstrap', bootstrap)
+   // Also attach to window for direct access
+  window.bootstrap = bootstrap;
 });

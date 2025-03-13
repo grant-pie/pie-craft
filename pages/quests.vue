@@ -1,5 +1,5 @@
 <template>
-    <div class="card mt-5 bg-transparent ">
+    <div class="card mt-10 mt-xl-5 bg-transparent ">
         <div class="card-body px-0 d-flex flex-column">
             <div class="card border">
                 <div class="card-body">
@@ -23,7 +23,7 @@
                     :rewardUrl="quest.rewardUrl"
                     :rewardName="quest.rewardName"
                     :rewardDescription="quest.rewardDescription"
-                     :class="chunk.length > 1 ? index % 2 === 0  ? 'me-2' : 'ms-2' : ''"
+                     :class="chunk.length > 1 ? index % 2 === 0  ? 'me-xl-2' : 'ms-xl-2' : ''"
                     />
                 </div>
             </div>

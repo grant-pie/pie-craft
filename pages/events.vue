@@ -5,7 +5,7 @@
 class="d-flex flex-column w-100"
 >
 
-    <h1 class="text-center mt-5">Upcoming Events.</h1>
+    <h1 class="text-center mt-xl-5 mt-10">Upcoming Events.</h1>
 
     <div class="d-flex flex-column  align-items-center mt-5">
         

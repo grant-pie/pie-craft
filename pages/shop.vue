@@ -53,7 +53,7 @@ import { computed } from 'vue'
 const itemTrades = [
     {
         item1Name: "Diamond Pickaxe",
-        item1Qty: 1,
+        item1Qty: 20,
         item2ImgUrl: './images/items/diamond_pickaxe.webp',
         item2Name: "",
         item2Qty: 1,
@@ -62,7 +62,7 @@ const itemTrades = [
 
     {
         item1Name: "Diamond Axe",
-        item1Qty: 1,
+        item1Qty: 20,
         item2ImgUrl: './images/items/diamond_axe.webp',
         item2Name: "",
         item2Qty: 1,
@@ -70,7 +70,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Shovel",
-        item1Qty: 1,
+        item1Qty: 20,
         item2ImgUrl: './images/items/diamond_shovel.webp',
         item2Name: "",
         item2Qty: 1,
@@ -78,7 +78,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Hoe",
-        item1Qty: 1,
+        item1Qty: 20,
         item2ImgUrl: './images/items/diamond_hoe.webp',
         item2Name: "",
         item2Qty: 1,
@@ -86,7 +86,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Sword",
-        item1Qty: 1,
+        item1Qty: 20,
         item2ImgUrl: './images/items/diamond_sword.webp',
         item2Name: "",
         item2Qty: 1,
@@ -94,7 +94,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Helmet",
-        item1Qty: 1,
+        item1Qty: 14,
         item2ImgUrl: './images/items/diamond_helmet.webp',
         item2Name: "",
         item2Qty: 1,
@@ -102,7 +102,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Chestplate",
-        item1Qty: 1,
+        item1Qty: 40,
         item2ImgUrl: './images/items/diamond_chestplate.webp',
         item2Name: "",
         item2Qty: 1,
@@ -110,7 +110,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Leggings",
-        item1Qty: 1,
+        item1Qty: 26,
         item2ImgUrl: './images/items/diamond_leggings.webp',
         item2Name: "",
         item2Qty: 1,
@@ -118,7 +118,7 @@ const itemTrades = [
     },
     {
         item1Name: "Diamond Boots",
-        item1Qty: 1,
+        item1Qty: 14,
         item2ImgUrl: './images/items/diamond_boots.webp',
         item2Name: "",
         item2Qty: 1,

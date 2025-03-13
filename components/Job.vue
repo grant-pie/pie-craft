@@ -18,7 +18,7 @@ const props = defineProps({
         <div class="card-header d-flex justify-content-center">
           <FontAwesomeIcon
           v-show="repeatable"
-          icon="repeat" class="fs-5 mt-2 me-3"/> 
+          icon="repeat" class="fs-5 mt-1 mt-xl-2 me-3"/> 
           <h4 class="card-title text-center">{{name}}</h4>
         </div>
 

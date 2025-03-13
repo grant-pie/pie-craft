@@ -3,9 +3,9 @@
 
     <!-- Content -->
     <div class="content-wrapper">
-      <nav class="navbar d-xl-none fixed-top bg-white ">
+      <nav class="navbar shadow  d-xl-none fixed-top py-4 bg-white ">
     
-      <button class="navbar-toggler ms-5  d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <button class="navbar-toggler ms-5 d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon "></span>
         </button>
 

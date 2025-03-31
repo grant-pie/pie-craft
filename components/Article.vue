@@ -25,9 +25,9 @@ const formattedDate = computed(() => props.publishedAt?.toISOString().split('T')
   
       <div class="card-body px-4">
         <img :src="imgUrl" class="card-img-top" alt="...">
-        <div class="d-flex mt-4">
-          {{ body }}
-        </div>
+        <div class="mt-4"
+        v-html="body"
+        ></div>
       </div>
     </div>
   </template>

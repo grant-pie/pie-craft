@@ -4,8 +4,7 @@
             <div class="card border">
                 <div class="card-body">
                     <h4 class="card-title text-center">Welcome to the PieCraft Shop</h4>
-                    <div class="d-flex">Looking for a place to spend your harned earned emeralds? Look no further than our very own shop."
-                    </div>
+                    <p class="text-center">Looking for a place to spend your harned earned emeralds? Look no further than our very own shop."</p>
                 </div>
             </div>
 

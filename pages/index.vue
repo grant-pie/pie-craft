@@ -55,7 +55,7 @@
                 :class="{ 'bg-primary text-light': hoverEmeralds }">
                 <div class="card-body d-flex align-items-center">
                   <FontAwesomeIcon icon="gem" class="fs-5 me-3"/> 
-                  <p class="mb-0">Click me you want to spend some emeralds.</p>
+                  <p class="mb-0">Click me you want to spend emeralds.</p>
                 </div>
               </button>
             </NuxtLink>

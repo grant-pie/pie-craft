@@ -22,8 +22,6 @@ jobs:
 
       - name: Generate static files
         run: npm run generate
-        env:
-          NUXT_APP_BASE_URL: /pie-craft/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

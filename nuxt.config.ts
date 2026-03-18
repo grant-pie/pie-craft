@@ -3,11 +3,16 @@ export default defineNuxtConfig({
   // Target static deployment
   ssr: true,
 
-  // Set the base URL to match your GitHub repository name
   app: {
-    baseURL: '/',
-    // Optionally, you can also set the buildAssetsDir for GitHub Pages
+    baseURL: '/pie-craft/',
     buildAssetsDir: '/assets/'
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/pie-craft/']
+    }
   },
   
   plugins: [

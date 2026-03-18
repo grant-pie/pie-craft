@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   // Set the base URL to match your GitHub repository name
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/' : '/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/pie-craft/' : '/',
     // Optionally, you can also set the buildAssetsDir for GitHub Pages
     buildAssetsDir: '/assets/'
   },
